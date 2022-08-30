@@ -28,9 +28,7 @@ void loop() {
   C = digitalRead(4);
   D = digitalRead(3);
 
-}
-
-// Modulo L com 1111
+  // Modulo L com 1111
 if (A*B*C*D == 1){
   digitalWrite(13,0);
   digitalWrite(12,0);
@@ -42,7 +40,7 @@ if (A*B*C*D == 1){
 }
 
 //MODULO um com 0001
-if (!A * !B * !C D == 1){
+if (!A * !B * !C * D == 1){
   digitalWrite(13,0);
   digitalWrite(12,1);
   digitalWrite(11,1);
@@ -64,6 +62,10 @@ if (A * !B * !C * !D  == 1){
   digitalWrite(7,1);
 
 }
+
+}
+
+
 
 
 
