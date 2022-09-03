@@ -22,44 +22,77 @@ void loop()
   Serial.println(tanque); // Imprime variável tanque no monitor 
 
   // Led vazio
-  if (tanque < 4 ){
-    digitalWrite(3,1); //Liga Led Vazio 
-
-  // Led 1/4  
-  } else if(tanque > 4 and tanque <= 130) {
+  while (tanque < 4 ){
+    digitalWrite(3,1); //Liga Led Vazio    
+  } 
+  digitalWrite(3,0)
+  
+  while (tanque > 4 and tanque <= 130) {
     digitalWrite(4,1);
+  } 
+  digitalWrite(4,0)
 
-  } else if(tanque > 130 and tanque <= 260) {
+  while (tanque > 130 and tanque <= 260) {
     digitalWrite(4,1);
     digitalWrite(5,1);
+  } 
 
-  } else if(tanque > 260 and tanque <= 400) {
+  digitalWrite(4,0);
+  digitalWrite(5,0);
+
+  while (tanque > 260 and tanque <= 400) {
     digitalWrite(4,1);
     digitalWrite(5,1);
     digitalWrite(6,1);
+  }
 
-  } else if(tanque > 400 and tanque <= 560) {
+  digitalWrite(4,0);
+  digitalWrite(5,0);
+  digitalWrite(6,0);
+
+  while (tanque > 400 and tanque <= 560) {
     digitalWrite(4,1);
     digitalWrite(5,1);
     digitalWrite(6,1);
     digitalWrite(7,1);
+  } 
 
-  } else if(tanque > 560 and tanque <= 680) {
+  digitalWrite(4,0);
+  digitalWrite(5,0);
+  digitalWrite(6,0);
+  digitalWrite(7,0);
+  
+  while (tanque > 560 and tanque <= 680) {
     digitalWrite(4,1);
     digitalWrite(5,1);
     digitalWrite(6,1);
     digitalWrite(7,1);
     digitalWrite(8,1);
+  } 
 
-  } else if(tanque > 680 and tanque <= 780) {
+  digitalWrite(4,0);
+  digitalWrite(5,0);
+  digitalWrite(6,0);
+  digitalWrite(7,0);
+  digitalWrite(8,0);   
+  
+  while (tanque > 680 and tanque <= 780) {
     digitalWrite(4,1);
     digitalWrite(5,1);
     digitalWrite(6,1);
     digitalWrite(7,1);
     digitalWrite(8,1);
     digitalWrite(9,1);
+  } 
+  
+  digitalWrite(4,0);
+  digitalWrite(5,0);
+  digitalWrite(6,0);
+  digitalWrite(7,0);
+  digitalWrite(8,0);
+  digitalWrite(9,0);
 
-  } else if(tanque > 780 and tanque <= 1023) {
+  while (tanque > 780 and tanque <= 1023) {
     digitalWrite(4,1);
     digitalWrite(5,1);
     digitalWrite(6,1);
@@ -69,5 +102,12 @@ void loop()
     digitalWrite(10,1);
     
   }
+  digitalWrite(4,0);
+  digitalWrite(5,0);
+  digitalWrite(6,0);
+  digitalWrite(7,0);
+  digitalWrite(8,0);
+  digitalWrite(9,0);
+  digitalWrite(10,0);
 
 }
