@@ -6,7 +6,7 @@ void void setup()
   pinMode(A0, INPUT);
   pinMode(3, OUTPUT); //vazio
   pinMode(4, OUTPUT); // 1/4
-  pinMode(5, OUTPUT); //metade
+  pinMode(5, OUTPUT); //metade      //tanque < 255 and tanque > 2
   pinMode(6, OUTPUT); // 3/4
   pinMode(7, OUTPUT); // Cheio
   Serial.begin(9600);
@@ -19,9 +19,10 @@ void void loop()
   Serial.println(tanque); // Imprime variável tanque no monitor 
 
   // Led vazio
-  if (tanque < 255 and tanque > 2){
+  if (< 2 and > 255){
     digitalWrite(3,1); //Liga Led Vazio laranja
-  } {
+  // Led 1/4  
+  } else if() {
 
   }
 }
